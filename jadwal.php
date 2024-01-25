@@ -1,0 +1,186 @@
+<html>
+<title>Jadwal Sholat</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-jadwalsholat.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<!-- Navbar -->
+<script src="assets/js/navbar.js"></script>
+
+<div class="rm-navbar">
+    <div class="rm-navbar-pc"> <!--hidden on mobile -->
+        <div class="rm-navbar-logo">
+            <img src="assets/img/logo.png" alt="logo">
+            </div>
+        <div class="rm-navbar-middle">
+            <div class="rm-navbar-midleft">
+                    <a href="index.html">Beranda</a>
+                    <a href="#">Al-Qur'an</a>
+                    <a class="active" href="jadwal.php">Jadwal Sholat</a>
+            </div>
+            <div class="rm-navbar-midright">
+                <a href="login.html"><i class="fa-duotone fa-book-blank fa-lg" style="--fa-primary-color: #3397B3; --fa-secondary-color: #3397B3;"></i></i> Belajar</a>
+            </div>
+        </div>
+        <div class="rm-navbar-end">
+            <a><i class="fa-regular fa-gear fa-lg"></i></a>
+            <a><i class="fa-regular fa-bell fa-lg"></i></a>
+            <!-- Profile button if logged in -->
+            <a href="#">Kontak Kami</a>
+        </div>
+    </div>
+    <div class="rm-navbar-mobile"> <!-- visible on Mobile -->
+        <div class="rm-navbar-top">
+            <div class="rm-navbar-burger">
+                <button class="menu-btn" id="menuBtn_slider_2">
+                    <div class="menu-btn__burger"></div>
+                  </button>
+            </div>
+            <div class="rm-navbar-logo">
+                <img src="assets/img/logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="rm-navbar-down fixed-bottom">
+            <div class="rm-navbar-island">
+                <div class="rm-navbar-button">
+                    <div class="rm-navbar-container" onclick="window.location.href = 'index.html';">
+                        <i class="fa-regular fa-house fa-lg"></i>
+                        <p>Beranda</p>
+                    </div>
+                    <div class="rm-navbar-container">
+                        <i class="fa-regular fa-book-quran fa-lg"></i>
+                        <p>Al-Qur'an</p>
+                    </div>
+                    <div class="rm-navbar-container active" > 
+                        <i class="fa-regular fa-clock fa-lg" onclick="window.location.href = 'jadwal.php';"></i>
+                        <p>Jadwal Sholat</p>
+                    </div>
+                    <div class="rm-navbar-container">
+                        <i class="fa-regular fa-book-blank fa-lg"></i>
+                        <p>Belajar</p>
+                    </div>
+                    <div class="rm-navbar-container">
+                        <i class="fa-regular fa-gear fa-lg"></i>
+                        <p>Setting</p>
+                    </div>
+                </div>
+                <!-- Beranda button -->
+                <!-- Al-Qur'an button -->
+                <!-- Jadwal Sholat Button -->
+                <!-- Belajar Button -->
+                <!-- Setting button -->
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="rm-navbar-slider">
+    <div class="rm-navbar-slider-up">
+        <div class="rm-navbar-burger">
+            <button class="menu-btn" id="menuBtn_slider">
+                <div class="menu-btn__burger"></div>
+              </button>
+        </div>
+        <div class="rm-navbar-logo">
+            <img src="assets/img/logo.png" alt="logo">
+            <a>RuangMuslim</a>
+        </div>
+        <div class="rm-navbar-search">
+            <!-- Search Div -->
+        </div>
+        <div class="rm-navbar-content">
+            <div class="rm-navbar-container-slider" onclick="window.location.href = 'index.html';">
+                <i class="fa-regular fa-house fa-lg"></i>
+                <p>Beranda</p>
+            </div>
+            <div class="rm-navbar-container-slider">
+                <i class="fa-regular fa-book-quran fa-lg"></i>
+                <p>Al-Qur'an</p>
+            </div>
+            <div class="rm-navbar-container-slider mobile-active" onclick="window.location.href = 'jadwal.php';">
+                <i class="fa-regular fa-clock fa-lg"></i>
+                <p>Jadwal Sholat</p>
+            </div>
+            <div class="rm-navbar-container-slider">
+                <i class="fa-regular fa-book-blank fa-lg"></i>
+                <p>Belajar</p>
+            </div>
+        </div>
+        <div class="rm-line"></div>
+        <div class="rm-navbar-content">
+            <div class="rm-navbar-container-slider">
+                <i class="fa-regular fa-bell fa-lg"></i>
+                <p>Notifikasi</p>
+            </div>
+            <div class="rm-navbar-container-slider">
+                <i class="fa-regular fa-gear fa-lg"></i>
+                <p>Setting</p>
+            </div>
+        </div>
+    </div>
+    <div class="rm-navbar-slider-down fixed-bottom">
+        <div class="rm-navbar-account">
+            <!-- If not login --->
+            <div class="rm-navbar-profile">
+                <!-- Import Guest User -->
+            </div>
+            <div class="rm-navbar-user">
+                <!-- Login -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Navbar -->
+<!-- Jadwal Sholat Content -->
+    <script src="assets/js/test.js"></script>
+    <div class="rm-title-content">
+        <h1>Jadwal Sholat</h1>
+        <p id="title-kota"></p>
+    </div>
+    <div class="rm-search-kota">
+
+    </div>
+    <div class="rm-jadwalsekarang">
+        <div class="rm-table-highlight">
+            <div class="rm-table-highlight">
+                <p id="todaydate"></p>
+                <div class="line-highlight"></div>
+                <center><p id="subuh"></p></center>
+                <center><p id="dhuhur"></p></center>
+                <center><p id="ashar"></p></center>
+                <center><p id="maghrib"></p></center>
+                <center><p id="isya"></p></center>
+            </div>
+        </div>
+        <div class="rm-table-month">
+            <table class="table table-bordered">
+                <thead>
+                 <tr>
+                    <th> </th>
+                    <th>Imsak</th>
+                    <th>Subuh</th>
+                    <th>Terbit</th>
+                    <th>Dhuha</th>
+                    <th>Dhuhur</th>
+                    <th>Ashar</th>
+                    <th>Maghrib</th>
+                    <th>Isya</th>
+                 </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

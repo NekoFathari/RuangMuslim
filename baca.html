@@ -1,0 +1,220 @@
+<html>
+<title>Al-Qur'an</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-alquran.css">
+    <link rel="stylesheet" href="assets/css/navbar-alquran.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<!-- Navbar -->
+<script src="assets/js/navbar.js"></script>
+
+<div class="rm-navbar">
+    <div class="rm-navbar-alquran" id="navbar">
+    <div class="rm-navbar-pc"> <!--hidden on mobile -->
+        <div class="rm-navbar-logo">
+            <i class="fa-solid fa-arrow-left fa-lg"></i>
+            </div>
+        <div class="rm-navbar-middle">
+            <div class="rm-navbar-midleft">
+                    <a href="index.html">Beranda</a>
+                    <a href="al-qur'an.html">Al-Qur'an</a>
+                    <a class="active" href="jadwal.php">Jadwal Sholat</a>
+            </div>
+            <div class="rm-navbar-midright">
+                <a href="login.html"><i class="fa-duotone fa-book-blank fa-lg" style="--fa-primary-color: #3397B3; --fa-secondary-color: #3397B3;"></i></i> Belajar</a>
+            </div>
+        </div>
+        <div class="rm-navbar-end">
+            <a><i class="fa-regular fa-gear fa-lg"></i></a>
+            <a><i class="fa-regular fa-bell fa-lg"></i></a>
+            <!-- Profile button if logged in -->
+            <a href="#">Kontak Kami</a>
+        </div>
+    </div>
+    <div class="rm-navbar-alquran-top">
+        <div class="rm-navbar-left">
+            <div class="rm-navbar-burger">
+            </div>
+            <div class="rm-button-drop">
+                    <button class="menu-btn" id="sliderBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <p>Surah</p><i class="fa-solid fa-chevron-down fa-lg" id="chevronRot"></i>
+                    </button>
+            </div>
+        </div>
+        <div class="rm-navbar-right">
+            <div class="rm-button-drop">
+                <p>Mode</p>
+                <div class="dropdown">
+                    <button style="border-radius:10vmin !important;" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="rm-navbar-mobile"> <!-- visible on Mobile -->
+        <div class="rm-navbar-top">
+            <div class="rm-navbar-burger">
+                <button class="menu-btn" id="menuBtn_slider_2">
+                    <div class="menu-btn__burger"></div>
+                  </button>
+            </div>
+            <div class="rm-navbar-logo">
+                <img src="assets/img/logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="rm-navbar-down fixed-bottom">
+            <div class="rm-navbar-island">
+                <div class="rm-navbar-button">
+                    <div class="rm-navbar-container" onclick="window.location.href = 'index.html';">
+                        <i class="fa-regular fa-house fa-lg"></i>
+                        <p>Beranda</p>
+                    </div>
+                    <div class="rm-navbar-container">
+                        <i class="fa-regular fa-book-quran fa-lg"></i>
+                        <p>Al-Qur'an</p>
+                    </div>
+                    <div class="rm-navbar-container active" > 
+                        <i class="fa-regular fa-clock fa-lg" onclick="window.location.href = 'jadwal.php';"></i>
+                        <p>Jadwal Sholat</p>
+                    </div>
+                    <div class="rm-navbar-container">
+                        <i class="fa-regular fa-book-blank fa-lg"></i>
+                        <p>Belajar</p>
+                    </div>
+                    <div class="rm-navbar-container">
+                        <i class="fa-regular fa-gear fa-lg"></i>
+                        <p>Setting</p>
+                    </div>
+                </div>
+                <!-- Beranda button -->
+                <!-- Al-Qur'an button -->
+                <!-- Jadwal Sholat Button -->
+                <!-- Belajar Button -->
+                <!-- Setting button -->
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header absolut-padding padding-2x" id="slider-toppadding">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" id="closeBtn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="rm-navbar-slider">
+    <div class="rm-navbar-slider-up">
+        <div class="rm-navbar-burger">
+            <button class="menu-btn" id="menuBtn_slider">
+                <div class="menu-btn__burger"></div>
+              </button>
+        </div>
+        <div class="rm-navbar-logo">
+            <img src="assets/img/logo.png" alt="logo">
+            <a>RuangMuslim</a>
+        </div>
+        <div class="rm-navbar-search">
+            <!-- Search Div -->
+        </div>
+        <div class="rm-navbar-content">
+            <div class="rm-navbar-container-slider" onclick="window.location.href = 'index.html';">
+                <i class="fa-regular fa-house fa-lg"></i>
+                <p>Beranda</p>
+            </div>
+            <div class="rm-navbar-container-slider">
+                <i class="fa-regular fa-book-quran fa-lg"></i>
+                <p>Al-Qur'an</p>
+            </div>
+            <div class="rm-navbar-container-slider mobile-active" onclick="window.location.href = 'jadwal.php';">
+                <i class="fa-regular fa-clock fa-lg"></i>
+                <p>Jadwal Sholat</p>
+            </div>
+            <div class="rm-navbar-container-slider">
+                <i class="fa-regular fa-book-blank fa-lg"></i>
+                <p>Belajar</p>
+            </div>
+        </div>
+        <div class="rm-line"></div>
+        <div class="rm-navbar-content">
+            <div class="rm-navbar-container-slider">
+                <i class="fa-regular fa-bell fa-lg"></i>
+                <p>Notifikasi</p>
+            </div>
+            <div class="rm-navbar-container-slider">
+                <i class="fa-regular fa-gear fa-lg"></i>
+                <p>Setting</p>
+            </div>
+        </div>
+    </div>
+    <div class="rm-navbar-slider-down fixed-bottom">
+        <div class="rm-navbar-account">
+            <!-- If not login --->
+            <div class="rm-navbar-profile">
+                <!-- Import Guest User -->
+            </div>
+            <div class="rm-navbar-user">
+                <!-- Login -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Navbar -->
+<!-- Options -->
+
+<!-- Baca Al-qur'an Content -->
+<div class="rm-baca-quran">
+    <div class="rm-card-qur'an">
+        <div class="card-top">
+            <div class="card-top-left">
+                <div class="card-surah-number">
+                    <p>1</p>
+                </div>
+            </div>
+            <div class="card-top-right">
+                <div class="card-ayat">
+
+                </div>
+            </div>
+        </div>
+        <div class="card-bottom">
+            <div class="card-subtitle-id">
+
+            </div>
+        </div>
+        <div class="card-bottom">
+            <div class="card-subtitle-id">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/baca-qur'an.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script></body>
+</html>

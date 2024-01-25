@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Forum&display=swap');
+
+body{
+    background-color: white;
+
+    /*** - Variable Declaration - ***/
+    --text-color: #ffffff;
+    --text-color-hover: #3397B3;
+    --text-color-blue:#11324D;
+    --bg-color: white;
+    --bg-color-welcome: #4B8673;
+    --font-size-navbar: 2.5vmin;
+
+    --text-color-nav-2: white;
+    --text-color-nav-b-2: white;
+    --text-color-nav-grey-2:#AAA;
+    --bg-color-nav-2: var(--gray-5);
+    --bg-color-nav-2-hover: var(--gray-6);
+}
+
+.rm-title-content{
+    background-color: #4B8673;
+    height: 30vmin;
+    padding-top: calc(var(--nav-height) + 5vmin) !important;
+    padding:  23vmin;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rm-title-content h1{
+    font-family: Forum;
+    color: white;
+    font-size: 7vmin;
+}
+
+.rm-title-content p{
+    font-family: Forum;
+    color: white;
+    font-size: 4vmin;
+    letter-spacing: 0.4vmin;
+}
+
+.rm-jadwalsekarang{
+    padding: 4vmin 15vmin;
+}
+
+.rm-table-highlight{
+    background-color: var(--bg-color-welcome);
+    border-radius: 8vmin;
+    color: var(--text-color-nav-2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vmin 7vmin;
+    width: 100%;
+}
+
+.rm-table-highlight p{
+    font-size: 3vmin;
+    display: flex;
+    align-items: center;
+    text-justify: center;
+    margin: 0 !important;
+}
+
+.rm-table-month{
+    padding-top: 5vmin;
+}

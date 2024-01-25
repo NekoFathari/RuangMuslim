@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Forum&display=swap');
+
+body{
+    background-color: white;
+
+    /*** - Variable Declaration - ***/
+    --text-color: #ffffff;
+    --text-color-hover: #3397B3;
+    --text-color-blue:#11324D;
+    --bg-color: white;
+    --bg-color-welcome: #4B8673;
+    --font-size-navbar: 2.5vmin;
+
+    --text-color-nav-2: white;
+    --text-color-nav-b-2: white;
+    --text-color-nav-grey-2:#AAA;
+    --bg-color-nav-2: var(--gray-5);
+    --bg-color-nav-2-hover: var(--gray-6);
+}
+
+.rm-title-content{
+    background-color: #4B8673;
+    height: 30vmin;
+    padding-top: calc(var(--nav-height) + 5vmin) !important;
+    padding:  23vmin;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rm-title-content h1{
+    font-family: Forum;
+    color: white;
+    font-size: 7vmin;
+}
+
+.rm-title-content p{
+    font-family: Forum;
+    color: white;
+    font-size: 4vmin;
+    letter-spacing: 0.1vmin;
+    line-height: 2vmin;
+}
+.rm-card-surah{
+    padding: 10vmin 5vmin;
+}
+
+.rm-grid{
+    display: grid;
+    gap: 2vmin;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+
+
+.rm-mockup-mekkah{
+    border: 0.3vmin solid rgba(128, 127, 129, 0.5);
+    border-radius: 3vmin;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vmin;
+    align-items: end;
+    cursor: context-menu;
+    transition-property:all;
+    transition-duration:0.5s;
+  }
+  
+  .rm-mockup-mekkah:hover{
+    border: 0.3vmin solid rgba(1, 89, 88, 0.5);
+    border-radius: 3vmin;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vmin;
+  }
+  
+  .rm-mockup-mekkah a{
+    text-decoration: none;
+    font-weight:500;
+    letter-spacing:0.2vmin;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #015958;
+    text-decoration: none;
+    transition-property:all;
+    transition-duration:0.5s;
+    font-size: 3vmin;
+    margin: auto;
+  }
+
+  .rm-mockup-madinah{
+    border: 0.3vmin solid rgba(128, 127, 129, 0.5);
+    border-radius: 3vmin;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vmin;
+    align-items: end;
+    cursor: context-menu;
+    transition-property:all;
+    transition-duration:0.5s;
+  }
+  
+  .rm-mockup-madinah:hover{
+    border: 0.3vmin solid rgba(1, 89, 88, 0.5);
+    border-radius: 3vmin;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vmin;
+  }
+  
+  .rm-mockup-madinah a{
+    text-decoration: none;
+    font-weight:500;
+    letter-spacing:0.2vmin;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #015958;
+    text-decoration: none;
+    transition-property:all;
+    transition-duration:0.5s;
+    font-size: 3vmin;
+    margin: auto;
+  }
+
+  .rm-informasi-surat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .penjelasan-surat{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .penjelasan-surat h4{
+    margin-bottom: 1vmin !important;
+    font-size: 3vmin !important;
+  }
+  .penjelasan-surat p{
+    margin: 0 !important;
+    font-size: 2vmin;
+    line-height: 2.5vmin;
+  }
+
+  .nomor-surat{
+    font-size: 5vmin;
+    margin-right: 3vmin !important;
+    display: flex;
+    font-weight: 700;
+    color: white;
+  }
+
+  .nomor-surat p{
+    background-color: #C0C3CB;
+    padding: 2vmin 4vmin ;
+    border-radius: 10vmin;
+    margin: 0 !important;
+  }
+
+  .element-img-mekkah img{
+    width: 18vmin;
+    transform: translate(1.5vmin, 1.5vmin);
+
+  }
+
+  
+  .element-img-madinah img{
+    width: 24vmin;
+    transform: translate(0vmin, 2vmin);
+
+  }
